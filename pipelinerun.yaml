@@ -1,0 +1,10 @@
+kind: PipelineRun
+apiVersion: tekton.dev/v1beta1
+metadata:
+  name: run-basic-pipeline-from-git
+spec:
+  pipelineRef:
+    name: a-simple-pipeline
+  params:
+  - name: username
+    value: liza
